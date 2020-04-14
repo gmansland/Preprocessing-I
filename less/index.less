@@ -54,6 +54,74 @@ table {
 }
 
 html, body {
-    height: 100%;
+    height:100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@main-font:'Roboto', sans-serif;
+@main-color:darkgray;
+
+body {
+	padding:20%;
+	color:white;
+	background-color:black;
+}
+
+/*so you see i know how todays stuff this is not what i got stuck on*/
+.head {
+	display:flex;
+	justify-content:flex-end;
+	color:black;
+	margin:2%;
+	a {
+		text-decoration: none;  padding: 5px 20px;
+		background: rgb(83, 83, 83);
+		border: 1px sold gray;
+		margin: 10px 10px;
+		border-radius: 5px;
+		display: inline-block;
+		color:black;
+			&:hover{
+				background:black;
+				color:white;
+			}
+	}
+}
+
+.all-top {
+	background-color:rgb(83, 83, 83);
+	.top {
+		display:flex;
+		justify-content:space-between;
+		padding:2%;
+		@media( max-width: 500px ) {
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			.top1{
+			   img{
+				   width:90%;
+				   padding:10px;
+			   }
+			}
+		}
+	}
+	.top-2 {
+		padding:2%;
+	}
+}
+
+.mid {
+	display:flex;
+	Align-items: center;
+	.mid1 {
+		font-family:@main-font;
+		color:gray;
+		padding: 5%;
+	}
+	.mid2 {
+		color:@main-color;
+		padding: 5%;
+	}
+}
